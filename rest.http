@@ -1,0 +1,51 @@
+GET http://localhost:3000/products
+
+
+### Create a product
+POST http://localhost:3000/products
+Content-Type: application/json
+
+{
+    "name": "Apple Watch GPS + Cellular",
+    "price": 699
+}
+
+
+### GET a product by id 
+GET http://localhost:3000/products/id
+
+
+### Update a product by id 
+PATCH  http://localhost:3000/products/id
+
+
+### Delete a product by id 
+DELETE  http://localhost:3000/products/id
+
+
+###
+GET http://localhost:3000/abc
+
+
+###
+GET http://localhost:3000/test?name=iMac&price=2399
+
+
+###
+GET http://localhost:3000/test/8732465874/imac
+
+
+###
+POST http://localhost:3000/test
+Content-Type: application/json
+
+{
+    "name": "iMacPro",
+    "price": 4999
+}
+
+###
+POST http://localhost:3000/test
+Content-Type: application/x-www-form-urlencoded
+
+name=iMac&price=4999
